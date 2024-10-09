@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Age Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Left Sidebar (Desktop Only) -->
+        <aside class="sidebar left-sidebar">
+            <!-- Left Side Ad -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9588152802035920"
+                 crossorigin="anonymous"></script>
+            <!-- left -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-9588152802035920"
+                 data-ad-slot="2963917798"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header Section -->
+            <header>
+                <h1><i class="fas fa-birthday-cake"></i> Age Calculator</h1>
+            </header>
+
+            <!-- Ad Under Header -->
+            <section class="ad-section">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9588152802035920"
+                     crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-fb+5w+4e-db+86"
+                     data-ad-client="ca-pub-9588152802035920"
+                     data-ad-slot="2974057478"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </section>
+
+            <!-- Main Content -->
+            <main>
+                <!-- Calculator Section -->
+                <section class="calculator">
+                    <h2>Discover More About Your Age</h2>
+                    <form id="dob-form">
+                        <div class="input-group">
+                            <label for="year">Year</label>
+                            <input type="number" id="year" name="year" min="1900" max="2100" placeholder="YYYY" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="month">Month</label>
+                            <input type="number" id="month" name="month" min="1" max="12" placeholder="MM" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="day">Day</label>
+                            <input type="number" id="day" name="day" min="1" max="31" placeholder="DD" required>
+                        </div>
+                        <button type="submit" class="calculate-btn">Calculate <i class="fas fa-calculator"></i></button>
+                    </form>
+                </section>
+
+                <!-- Ad Under Calculator -->
+                <section class="ad-section">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9588152802035920"
+                         crossorigin="anonymous"></script>
+                    <!-- mid mid -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-9588152802035920"
+                         data-ad-slot="8818879702"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </section>
+
+                <!-- Results Section -->
+                <section id="results" class="results" style="display:none;">
+                    <!-- Age Breakdown -->
+                    <div class="result-group">
+                        <h3>Your Age Breakdown</h3>
+                        <div class="result-card">
+                            <i class="fas fa-hourglass-start"></i>
+                            <p id="age-ymd"></p>
+                        </div>
+                        <div class="result-card">
+                            <i class="fas fa-clock"></i>
+                            <p id="age-total"></p>
+                        </div>
+                    </div>
+
+                    <!-- Interesting Facts -->
+                    <div class="result-group">
+                        <h3>Interesting Facts</h3>
+                        <div class="result-card">
+                            <i class="fas fa-star"></i>
+                            <p id="zodiac-sign"></p>
+                        </div>
+                        <div class="result-card">
+                            <i class="fas fa-calendar-day"></i>
+                            <p id="day-of-week"></p>
+                        </div>
+                        <div class="result-card">
+                            <i class="fas fa-leaf"></i>
+                            <p id="season"></p>
+                        </div>
+                    </div>
+
+                    <!-- Ad Between Sections -->
+                    <section class="ad-section">
+                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9588152802035920"
+                             crossorigin="anonymous"></script>
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-format="autorelaxed"
+                             data-ad-client="ca-pub-9588152802035920"
+                             data-ad-slot="8338128438"></ins>
+                        <script>
+                             (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </section>
+
+                    <!-- Countdown to Next Birthday -->
+                    <div class="result-group">
+                        <h3>Countdown to Your Next Birthday</h3>
+                        <div class="result-card">
+                            <i class="fas fa-bell"></i>
+                            <p id="next-birthday"></p>
+                        </div>
+                        <div class="result-card">
+                            <i class="fas fa-calendar-alt"></i>
+                            <p id="next-birthday-day"></p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Ad at the End -->
+                <section class="ad-section">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9588152802035920"
+                         crossorigin="anonymous"></script>
+                    <!-- اخر شي -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-9588152802035920"
+                         data-ad-slot="4039727139"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </section>
+            </main>
+
+            <!-- Footer Section -->
+            <footer>
+                <p>&copy; <span id="current-year"></span> Age Calculator</p>
+            </footer>
+        </div>
+
+        <!-- Right Sidebar (Desktop Only) -->
+        <aside class="sidebar right-sidebar">
+            <!-- Right Side Ad -->
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9588152802035920"
+                 crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-format="autorelaxed"
+                 data-ad-client="ca-pub-9588152802035920"
+                 data-ad-slot="6270368299"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </aside>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
